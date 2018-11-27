@@ -1,0 +1,10 @@
+---
+ - hosts: aws
+   become: yes
+   vars_files:
+     group_vars/tomcat-server
+   roles:
+    - tomcat
+    - java
+    - jenkins
+
